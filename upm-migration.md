@@ -7,7 +7,7 @@ release workflow so it works with the signing feature introduced in Unity 6.3.
 
 Create CHANGELOG.md in the repository root based on the following file:
 
-https://gist.githubusercontent.com/keijiro/5fc40f713538a819329685d30ee782ff/raw/f3490453d1ae8d70ce0b7d0e6391fc657e4863ff/CHANGELOG.md
+https://raw.githubusercontent.com/keijiro/AgentWorkflows/refs/heads/main/CHANGELOG.md
 
 Remove any placeholders and append entries for the two most recent versions.
 
@@ -26,7 +26,7 @@ retrievable with `gh`) and the git commit logs.
 Update package.json inside Packages/jp.keijiro.(package-id). Use the following
 file as a reference:
 
-https://raw.githubusercontent.com/keijiro/UnityCustomPackageTest/refs/heads/master/Packages/jp.keijiro.unity-custom-package-test/package.json
+https://raw.githubusercontent.com/keijiro/AgentWorkflows/refs/heads/main/package.json
 
 Reorder the elements to match the reference and add missing fields such as
 changelogUrl. Derive the URLs from the git remote. Remove unused entries such as
@@ -41,9 +41,14 @@ Copy the CHANGELOG.md created in Step 1 into the package directory.
 
 ## Step 4 - Create AGENTS.md
 
-Copy the following AGENTS.md file into the repository root:
+Create `AGENTS.md` with the following content:
 
-https://raw.githubusercontent.com/keijiro/UnityCustomPackageTest/refs/heads/master/AGENTS.md
+```
+This repository contains a UPM Unity package project. Refer to the following
+document for the workflow:
+
+https://raw.githubusercontent.com/keijiro/AgentWorkflows/refs/heads/main/upm-workflow.md
+```
 
 ## Step 5 - Ignore the tarball
 
