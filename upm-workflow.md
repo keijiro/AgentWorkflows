@@ -52,7 +52,8 @@ Perform the following tasks:
   do so if it is missing.
 - Push commits and tags to the remote repository before creating the release.
 - Use the gh command to create a GitHub release. Copy the latest CHANGELOG.md
-  section into the release notes, omitting the section title.
+  section into the release notes, omitting the section title. Use a heredoc for
+  release notes when they contain line breaks.
 - Make the release title a concise summary in the form `[version]: [title]`.
   Confirm the chosen title with the user before finalizing the release.
 - Use npm to publish the tarball.
